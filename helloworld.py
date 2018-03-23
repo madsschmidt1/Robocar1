@@ -1,1 +1,1 @@
-print("This is message number {} of Hello World! script".format)
+print("nye sko today")
