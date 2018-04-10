@@ -1,2 +1,2 @@
 import time
-print("Hello world")
+print("Hello ")
