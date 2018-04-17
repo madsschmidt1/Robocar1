@@ -23,17 +23,13 @@ while True:
     leftmotor = GPIO.PWM(PWMB, 50)
     rightmotor.start(0)
     leftmotor.start(0)
-
-
     rightmotor.ChangeDutyCycle(0)
     leftmotor.ChangeDutyCycle(0)
     time.sleep(2)
-    rightmotor.ChangeDutyCycle(0)
-    leftmotor.ChangeDutyCycle(0)
 
 
-GPIO.output(AIN1, GPIO.HIGH)
-GPIO.output(AIN2, GPIO.LOW)
-GPIO.output(BIN1, GPIO.LOW)
-GPIO.output(BIN2, GPIO.HIGH)
-time.sleep(1)
+    GPIO.output(AIN1, GPIO.HIGH)
+    GPIO.output(AIN2, GPIO.LOW)
+    GPIO.output(BIN1, GPIO.LOW)
+    GPIO.output(BIN2, GPIO.HIGH)
+    time.sleep(1)
