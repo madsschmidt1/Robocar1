@@ -73,11 +73,16 @@ def forward():
     rightmotor.ChangeDutyCycle(20)
     leftmotor.ChangeDutyCycle(20)
     #time it turns
-    time.sleep(2)#time.sleep(0.6)
+    time.sleep(0.6)
     
-    #rightmotor.ChangeDutyCycle(70)
-    #leftmotor.ChangeDutyCycle(70)
-    #time.sleep(2)
+    rightmotor.ChangeDutyCycle(40)
+    leftmotor.ChangeDutyCycle(40)
+    #time it turns
+    time.sleep(2)#time.sleep(0.7)
+    
+    rightmotor.ChangeDutyCycle(70)
+    leftmotor.ChangeDutyCycle(70)
+    time.sleep(2)
 
 
     #time.sleep(1)
