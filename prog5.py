@@ -22,8 +22,8 @@ def forward():
     while True:
         rightmotor = GPIO.PWM(PWMA, 50)  # channel=12 frequency=50Hz
         leftmotor = GPIO.PWM(PWMB, 50)
-        rightmotor.start(0)
-        leftmotor.start(0)
+        rightmotor.start(100)
+        leftmotor.start(100)
         rightmotor.ChangeDutyCycle(20)
         leftmotor.ChangeDutyCycle(20)
         time.sleep(1)
@@ -39,8 +39,8 @@ def backward():
     while True:
         rightmotor = GPIO.PWM(PWMA, 50)  # channel=12 frequency=50Hz
         leftmotor = GPIO.PWM(PWMB, 50)
-        rightmotor.start(0)
-        leftmotor.start(0)
+        rightmotor.start(100)
+        leftmotor.start(100)
         rightmotor.ChangeDutyCycle(20)
         leftmotor.ChangeDutyCycle(20)
         time.sleep(1)
@@ -63,3 +63,8 @@ def stop():
 forward()
 backward()
 stop()
+
+#this program perform forward, backward and then stops.
+# The functions needs to be fixt so the can be called from php not from here
+
+
